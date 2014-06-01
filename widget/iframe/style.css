@@ -140,6 +140,9 @@ body {
 	vertical-align: middle;
 	text-align: center;
 }
+#modal #button_container #button img {
+	border: 0;
+}
 #modal #logo {
 	position: absolute;
 	width: 100%;
