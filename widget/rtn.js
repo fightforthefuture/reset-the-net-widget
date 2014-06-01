@@ -110,17 +110,22 @@ var _rtn_util = {
 
 function onDomContentLoaded() {
 	
-	// Don't show the widget more than once, unless we really want it.
-	if 	(
-		_rtn_util.getCookie('_RTN_WIDGET_SHOWN')
-		&&
-		window.location.href.indexOf('ALWAYS_SHOW_RTN_WIDGET') == -1
-		&&
-		_rtn_options.always_show_widget == false
-		)
-		return;
-	else
-		_rtn_util.setCookie('_RTN_WIDGET_SHOWN', 'true', 365);
+	// Should we show the widget, regardless?
+	if (!_rtn_options.always_show_widget) {
+		// Only show once.
+		if (_rtn_util.getCookie('_RTN_WIDGET_SHOWN') && window.location.href.indexOf('ALWAYS_SHOW_RTN_WIDGET') === -1) {
+			return;
+		}
+
+		// Only show on June 5th.
+		var date = new Date();
+		var dateString = d.getFullYear() + '/' + (d.getMonth() + 1) + '/' + d.getDate();
+		if (dateString !== '2014/6/5') {
+			return;
+		}
+	}
+
+	_rtn_util.setCookie('_RTN_WIDGET_SHOWN', 'true', 365);
 
 	_rtn_util.injectCSS('_rtn_iframe_css', '#_rtn_iframe { position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; }');
 
