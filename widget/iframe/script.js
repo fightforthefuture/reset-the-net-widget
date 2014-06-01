@@ -3,12 +3,6 @@ window.setTimeout(function() {
 }, 100);
 
 window.setTimeout(function() {
-
-	$('#close').click(function(e) {
-		e.preventDefault();
-		sendMessage('stop');
-	});
-
 	var cta = document.getElementById('cta');
 	var str = 'A year after the first NSA revelation, Congress has failed to protect our rights. Starting today, June 5th, we\'re taking steps to directly block government surveillance on the Internet. Here\'s how to protect your devices too:';
 
@@ -102,4 +96,10 @@ var sendMessage = function(requestType, data)
 
 $(document).ready(function() {
 	sendMessage('getAnimation');
+
+	// Add close button listener.
+	$('#close').on('mousedown', function(e) {
+		e.preventDefault();
+		sendMessage('stop');
+	});
 });
