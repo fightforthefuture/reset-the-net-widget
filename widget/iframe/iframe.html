@@ -204,14 +204,14 @@
 
 		@-webkit-keyframes houses_front {
 			0% { background-position: 0px 110px; }
-			55% { background-position: 0px 110px; }
-			85% { background-position: 0px 0px; }
+			40% { background-position: 0px 110px; }
+			70% { background-position: 0px 0px; }
 			
 		}
 		@keyframes houses_front {
 			0% { background-position: 0px 110px; }
-			55% { background-position: 0px 110px; }
-			85% { background-position: 0px 0px; }
+			40% { background-position: 0px 110px; }
+			70% { background-position: 0px 0px; }
 		}
 		#modal #houses_front {
 			-webkit-animation-duration: 10s;
@@ -224,14 +224,14 @@
 
 		@-webkit-keyframes houses_back {
 			0% { background-position: 0px 55px; }
-			55% { background-position: 0px 55px; }
-			85% { background-position: 0px 0px; }
+			40% { background-position: 0px 55px; }
+			70% { background-position: 0px 0px; }
 			
 		}
 		@keyframes houses_back {
 			0% { background-position: 0px 55px; }
-			55% { background-position: 0px 55px; }
-			85% { background-position: 0px 0px; }
+			40% { background-position: 0px 55px; }
+			70% { background-position: 0px 0px; }
 		}
 		#modal #houses_back {
 			-webkit-animation-duration: 10s;
@@ -244,16 +244,16 @@
 
 		@-webkit-keyframes modal {
 			0% { margin-top: 100px; opacity: 0; background-position: 0px 0px; }
-			55% { margin-top: 100px; opacity: 0; background-position: 0px 0px; }
-			75% { margin-top: 0px; opacity: 1; }
-			85% { background-position: 0px 0px; }
+			40% { margin-top: 100px; opacity: 0; background-position: 0px 0px; }
+			60% { margin-top: 0px; opacity: 1; }
+			70% { background-position: 0px 0px; }
 			
 		}
 		@keyframes modal {
 			0% { margin-top: 100px; opacity: 0; background-position: 0px 0px; }
-			55% { margin-top: 100px; opacity: 0; background-position: 0px 0px; }
-			75% { margin-top: 0px; opacity: 1; }
-			85% { background-position: 0px 0px; }
+			40% { margin-top: 100px; opacity: 0; background-position: 0px 0px; }
+			60% { margin-top: 0px; opacity: 1; }
+			70% { background-position: 0px 0px; }
 		}
 		#modal {
 			-webkit-animation-duration: 10s;
@@ -354,18 +354,26 @@
 			}
 
 			/* --- Animations --- */
+			#modal #houses_front {
+				-webkit-animation-name: none;
+				animation-name: none;
+			}
+			#modal #houses_back {
+				-webkit-animation-name: none;
+				animation-name: none;
+			}
 			@-webkit-keyframes modal_mobile {
 				0% { margin-top: 0px; opacity: 0; background-position: 0px 0px; }
-				55% { margin-top: 0px; opacity: 0; background-position: 0px 0px; }
-				75% { margin-top: 0px; opacity: 1; }
-				85% { background-position: 0px 0px; }
+				45% { margin-top: 0px; opacity: 0; background-position: 0px 0px; }
+				65% { margin-top: 0px; opacity: 1; }
+				75% { background-position: 0px 0px; }
 				
 			}
 			@keyframes modal_mobile {
 				0% { margin-top: 0px; opacity: 0; background-position: 0px 0px; }
-				55% { margin-top: 0px; opacity: 0; background-position: 0px 0px; }
-				75% { margin-top: 0px; opacity: 1; }
-				85% { background-position: 0px 0px; }
+				45% { margin-top: 0px; opacity: 0; background-position: 0px 0px; }
+				65% { margin-top: 0px; opacity: 1; }
+				75% { background-position: 0px 0px; }
 			}
 			#modal {
 				-webkit-animation-name: modal_mobile;
@@ -459,7 +467,7 @@
 			}, 1000);
 		}, 8000);
 
-	}, 9001);
+	}, 7500);
 
 	var animations = {
 		main: {
