@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	function preload() {
 		for (i = 0; i < preload.arguments.length; i++) {
 			images[i] = new Image()
-			images[i].src = _rtn_options.iframe_base_path + '/' + preload.arguments[i]
+			images[i].src = _rtn_options.iframe_base_path + '/images/' + preload.arguments[i]
 			images[i].onload = function() {
 				preloaded++;
 				_rtn_util.log('Preloaded ' + preloaded + ' images.');
