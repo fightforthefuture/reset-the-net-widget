@@ -30,4 +30,4 @@ Yep.
 
 [1]: https://www.resetthenet.org
 [2]: http://rubbingalcoholic.com/demos/rtn_widget/demo.html
-[2]: http://rubbingalcoholic.com/demos/rtn_widget/demo_mobile.html
+[3]: http://rubbingalcoholic.com/demos/rtn_widget/demo_mobile.html
