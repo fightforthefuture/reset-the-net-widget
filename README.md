@@ -25,7 +25,7 @@ Testing instructions
 --------------------
 [**Please view this page, in each device & browser you'd like to QA.**][2]
 
-Using the script on your website is easy. Just embed this HTML!
+Using the script on your website is easy. Just embed this HTML:
 ```
 <script src="//fightforthefuture.github.io/reset-the-net-widget/widget/rtn.js"></script>
 ```
