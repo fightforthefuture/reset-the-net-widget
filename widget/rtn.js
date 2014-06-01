@@ -1,3 +1,7 @@
+(function(){ // :)
+
+
+
 if (typeof _rtn_options == "undefined") _rtn_options = {};
 if (typeof _rtn_options.iframe_base_path == "undefined") _rtn_options.iframe_base_path = 'https://fightforthefuture.github.io/reset-the-net-widget/widget/iframe';
 if (typeof _rtn_options.animation == "undefined") _rtn_options.animation = 'main';
@@ -104,7 +108,7 @@ var _rtn_util = {
 	}
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+function onDomContentLoaded() {
 	
 	// Don't show the widget more than once, unless we really want it.
 	if 	(
@@ -153,7 +157,12 @@ document.addEventListener('DOMContentLoaded', function () {
 		'record_light.png'
 	);
 
-}, false);
+}
+
+if (document.addEventListener) {
+	document.addEventListener('DOMContentLoaded', onDomContentLoaded, false);
+}
 
 
 
+})(); // :)
