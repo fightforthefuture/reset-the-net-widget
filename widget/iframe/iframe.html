@@ -15,7 +15,6 @@
 		#camera { background: rgba(0, 0, 0, .5); }
 		#camera, #record_light { z-index: 2; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; display: table; text-align: center;}
 		#camera .lens, #record_light .blink { position: relative; display: table-cell; vertical-align: middle; }
-		#camera .lens img, #record_light .blink img { max-width: 80%; height: auto; }
 		#scene2 { z-index: 3; position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; display: table; }
 		#modal_container {  display: table-cell; vertical-align: middle; }
 		#modal {
@@ -320,6 +319,8 @@
 
 		/* Mobile styles */
 		@media (max-width:674px) {
+			#camera .lens img, #record_light .blink img { width: 300px; height: auto; }
+
 			#modal { position: relative; margin: 0px auto; width: 100%; height: 100%; border-radius: 0px; background-image: url(background.png); background-position: 0px 0px; background-size: auto 100%; background-attachment: fixed; box-shadow: none; }
 			#modal #houses_back { border-radius: 0px; background-size: auto 100%; background-attachment: fixed; }
 			#modal #houses_front { border-radius: 0px; background-size: auto 100%; background-attachment: fixed; border-bottom: 0px none transparent;	}
