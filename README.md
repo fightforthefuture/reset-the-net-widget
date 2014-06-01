@@ -15,20 +15,16 @@ This is a widget to allow webmasters to embed an RTN banner on their site.
 I will write a whole book about it when I have more time.
 
 
-Installation instructions
+How to embed the script
 -------------------------
-Please see the demo pages above and do your best to reverse engineer them.
-It's nearly 3am or I'd put something here.
-
-
-Testing instructions
---------------------
-[**Please view this page, in each device & browser you'd like to QA.**][2]
-
-Using the script on your website is easy. Just embed this HTML:
 ```
 <script src="//fightforthefuture.github.io/reset-the-net-widget/widget/rtn.js"></script>
 ```
+
+
+How to test on different devices
+--------------------
+[**Please view this page, in each device & browser you'd like to QA.**][2] Note: Normally, the script will only appear once, per user, per device. On this page, we've disabled this "one-time" functionality, so you can check out the animations however many times you'd like.
 
 
 
