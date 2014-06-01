@@ -151,6 +151,12 @@
 			text-align: center;
 			display: none;
 			z-index: 9001;
+			-ms-transition: opacity 2.5s ease-in;
+			-o-transition: opacity 2.5s ease-in;
+			-moz-transition: opacity 2.5s ease-in;
+			-webkit-transition: opacity 2.5s ease-in;
+			transition: opacity 2.5s ease-in;
+			opacity: 0;
 		}
 
 		/* --- Animations --- */
@@ -279,59 +285,7 @@
 		}
 
 
-		/*!
-		Animate.css - http://daneden.me/animate
-		Licensed under the MIT license
 
-		Copyright (c) 2013 Daniel Eden
-
-		Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-		The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-		THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-		*/
-		@-webkit-keyframes flipInX {
-			0% {
-				-webkit-transform: perspective(400px) rotateX(90deg);
-				-ms-transform: perspective(400px) rotateX(90deg);
-				transform: perspective(400px) rotateX(90deg);
-				opacity: 0;
-			}
-			100% {
-				-webkit-transform: perspective(400px) rotateX(0deg);
-				-ms-transform: perspective(400px) rotateX(0deg);
-				transform: perspective(400px) rotateX(0deg);
-			}			
-		}
-
-		@keyframes flipInX {
-			0% {
-				-webkit-transform: perspective(400px) rotateX(90deg);
-				-ms-transform: perspective(400px) rotateX(90deg);
-				transform: perspective(400px) rotateX(90deg);
-				opacity: 0;
-			}
-			100% {
-				-webkit-transform: perspective(400px) rotateX(0deg);
-				-ms-transform: perspective(400px) rotateX(0deg);
-				transform: perspective(400px) rotateX(0deg);
-			}			
-		}
-		.animated {
-			-webkit-animation-duration: 2s;
-			animation-duration: 2s;
-			-webkit-animation-fill-mode: both;
-			animation-fill-mode: both;
-		}
-		.flipInX {
-			-webkit-backface-visibility: visible !important;
-			-ms-backface-visibility: visible !important;
-			backface-visibility: visible !important;
-			-webkit-animation-name: flipInX;
-			animation-name: flipInX;
-		}
-		/* ------------- */
 
 		/* Mobile styles */
 		@media (max-width:674px) {
@@ -480,7 +434,7 @@
 		for (var i = 0; i < children.length; i++)
 		{
 			if (i && children[i-1].innerHTML == '.')
-				delay += 500;
+				delay += 600;
 			else
 				delay += 30;
 			setDisplayDelay(children[i], delay)
@@ -499,8 +453,10 @@
 			}, 50);
 			setTimeout(function() {
 				$('#logo').show();
-				$('#logo').addClass('animated flipInX');
-			}, 2000);
+				setTimeout(function() { 
+					$('#logo').css('opacity', 1);
+				}, 50);
+			}, 1000);
 		}, 8000);
 
 	}, 9001);
