@@ -29,5 +29,5 @@ Testing instructions
 
 
 [1]: https://www.resetthenet.org
-[2]: http://rubbingalcoholic.com/demos/rtn_widget/demo.html
-[3]: http://rubbingalcoholic.com/demos/rtn_widget/demo_mobile.html
+[2]: http://fightforthefuture.github.io/reset-the-net-widget/demo.html
+[3]: http://fightforthefuture.github.io/reset-the-net-widget/demo_mobile.html
