@@ -127,7 +127,7 @@ function onDomContentLoaded() {
 
 	_rtn_util.setCookie('_RTN_WIDGET_SHOWN', 'true', 365);
 
-	_rtn_util.injectCSS('_rtn_iframe_css', '#_rtn_iframe { position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; }');
+	_rtn_util.injectCSS('_rtn_iframe_css', '#_rtn_iframe { position: fixed; left: 0px; top: 0px; width: 100%; height: 100%; z-index: 20000; }');
 
 	var images = new Array()
 	var preloaded = 0;
