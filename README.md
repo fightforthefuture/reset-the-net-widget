@@ -1,7 +1,3 @@
-Reset the Net | Widget
-======================
-
-
 How to use the widget
 -------------------------
 Add this to any page, and you're golden:
