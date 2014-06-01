@@ -23,7 +23,7 @@ It's nearly 3am or I'd put something here.
 
 Testing instructions
 --------------------
-Yep.
+[**Please view this page, in each device & browser you'd like to QA.**][2]
 
 
 
