@@ -40,10 +40,10 @@ window.setTimeout(function() {
 		$('#button_container').addClass('shown');
 		setTimeout(function() { 
 			$('#button_container').css('opacity', 1);
-			$('#button a').on('mouseenter', function() {
+			$('#button a').on('mouseover', function() {
 				$('#button_glow2').css('opacity', .5);
 			});
-			$('#button a').on('mouseleave', function() {
+			$('#button a').on('mouseout', function() {
 				$('#button_glow2').css('opacity', 0);
 			});
 		}, 50);
