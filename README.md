@@ -10,7 +10,7 @@ How to QA the widget
 --------------------
 The widget is designed to only appear on June 5 2014, and only once, per user, per device. If you'd like to force it to show up on your page for testing, please (re)load the page with #ALWAYS_SHOW_RTN_WIDGET in the URL.
 
-eg: http://flagger.io/#ALWAYS_SHOW_RTN_WIDGET
+(eg: **http://flagger.io/#ALWAYS_SHOW_RTN_WIDGET**)
 
 
 Which browsers are supported
