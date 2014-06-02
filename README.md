@@ -1,6 +1,6 @@
 How to use the widget
 -------------------------
-Add this to any page, and you're golden:
+Add this to any page, and you're golden: ([**See the demo!**][2])
 ```
 <script src="//fightforthefuture.github.io/reset-the-net-widget/widget/rtn.js"></script>
 ```
@@ -8,9 +8,9 @@ Add this to any page, and you're golden:
 
 How to QA the widget
 --------------------
-[**Please view this page, in each device & browser you'd like to QA.**][2]
+The widget is designed to only appear on June 5 2014, and only once, per user, per device. If you'd like to force it to show up on your page for testing, please (re)load the page with #ALWAYS_SHOW_RTN_WIDGET in the URL.
 
-Note: Normally, the script will only appear once, per user, per device. On this special page, we've disabled this "one-time" functionality, so you can check out the animations however many times you'd like.
+eg: http://flagger.io/#ALWAYS_SHOW_RTN_WIDGET
 
 
 Which browsers are supported
