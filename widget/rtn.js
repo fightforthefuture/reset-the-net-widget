@@ -111,9 +111,9 @@ var _rtn_util = {
 function onDomContentLoaded() {
 	
 	// Should we show the widget, regardless?
-	if (!_rtn_options.always_show_widget) {
+	if (!_rtn_options.always_show_widget && window.location.href.indexOf('ALWAYS_SHOW_RTN_WIDGET') === -1) {
 		// Only show once.
-		if (_rtn_util.getCookie('_RTN_WIDGET_SHOWN') && window.location.href.indexOf('ALWAYS_SHOW_RTN_WIDGET') === -1) {
+		if (_rtn_util.getCookie('_RTN_WIDGET_SHOWN')) {
 			return;
 		}
 
