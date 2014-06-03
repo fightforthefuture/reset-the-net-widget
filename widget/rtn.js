@@ -119,7 +119,7 @@ function onDomContentLoaded() {
 
 		// Only show on June 5th.
 		var date = new Date();
-		var dateString = d.getFullYear() + '/' + (d.getMonth() + 1) + '/' + d.getDate();
+		var dateString = date.getFullYear() + '/' + (date.getMonth() + 1) + '/' + date.getDate();
 		if (dateString !== '2014/6/5') {
 			return;
 		}
