@@ -2,7 +2,7 @@ How to use the widget
 -------------------------
 Add this to any page, and you're golden: ([**See the demo!**][2])
 ```
-<script src="//fightforthefuture.github.io/reset-the-net-widget/widget/rtn.js"></script>
+<script src="//fightforthefuture.github.io/reset-the-net-widget/widget/rtn.js" async></script>
 ```
 
 
