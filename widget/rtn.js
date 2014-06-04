@@ -164,7 +164,12 @@ function onDomContentLoaded() {
 
 }
 
-if (document.addEventListener) {
+
+
+// Wait for DOM content to load.
+if (document.readyState == "complete" || document.readyState == "loaded") {
+	onDomContentLoaded();
+} else if (document.addEventListener) {
 	document.addEventListener('DOMContentLoaded', onDomContentLoaded, false);
 }
 
