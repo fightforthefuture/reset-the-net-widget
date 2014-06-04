@@ -7,7 +7,7 @@ window.setTimeout(function() {
 	$('#flash').hide();
 
 	var cta = document.getElementById('cta');
-	var str = 'A year after the first NSA revelation, Congress has failed to protect our rights. Starting today, June 5th, we\'re taking steps to directly block government surveillance on the Internet. Here\'s how to protect your devices too:';
+	var str = 'A year after the first NSA revelation, the US Congress has failed to protect our rights. Starting today, June 5th, we\'re taking steps to directly block government surveillance on the Internet. Here\'s how to protect your devices too:';
 
 	var fragment = document.createDocumentFragment();
 	for (var i = 0; i < str.length; i++) {
