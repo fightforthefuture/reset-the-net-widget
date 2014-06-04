@@ -167,7 +167,7 @@ function onDomContentLoaded() {
 
 
 // Wait for DOM content to load.
-if (document.readyState == "complete" || document.readyState == "loaded") {
+if (document.readyState == "complete" || document.readyState == "loaded" || document.readyState == "interactive") {
 	onDomContentLoaded();
 } else if (document.addEventListener) {
 	document.addEventListener('DOMContentLoaded', onDomContentLoaded, false);
